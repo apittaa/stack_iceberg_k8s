@@ -41,6 +41,9 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 # Configure Minikube to use 3 nodes
 minikube config set nodes 3
 
+# Right config
+minikube start -p ice-inno --nodes=3
+
 # Start Minikube with the 3-node configuration
 minikube start
 ```

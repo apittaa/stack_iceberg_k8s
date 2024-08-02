@@ -11,7 +11,7 @@ infra/terraform/*/*/.tfvars.json
 infra/terraform/*/*/terraform-provider-*
 infra/terraform/*/*/.terraform/plugins/
 infra/terraform/*/*/.terraform/providers/
-infra/terraform/*/*/terraform.tfstate
+infra/terraform/*/*/terraform.tfstate*
 infra/terraform/kubernetes/aks/orion-development/terraform.tfstate.backup
 
 venv/
@@ -36,3 +36,5 @@ infra/terraform/kubernetes/aks/starrocks-mds-dev/.terraform/providers/registry.t
 infra/terraform/kubernetes/aks/starrocks-mds-dev/.terraform/providers/registry.terraform.io/hashicorp/time/0.9.1/darwin_arm64/terraform-provider-time_v0.9.1_x5
 
 infra/terraform/kubernetes/aks/starrocks-mds-dev/terraform.tfstate
+
+infra/terraform/gitops/argocd/git-repo-con.yaml

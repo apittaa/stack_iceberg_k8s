@@ -34,7 +34,7 @@ server:
     # For more info: https://trino.io/docs/current/security/authentication-types.html
     authenticationType: ""
     query:
-      maxMemory: "4GB"
+      maxMemory: "1GB" # 5GB is the default value
   exchangeManager:
     name: "filesystem"
     baseDir: "/tmp/trino-local-file-system-exchange-manager"
@@ -281,7 +281,7 @@ secretMounts:
 
 coordinator:
   jvm:
-    maxHeapSize: "8G"
+    maxHeapSize: "1G"  #8G is the default value
     gcMethod:
       type: "UseG1GC"
       g1:
@@ -341,7 +341,7 @@ coordinator:
 
 worker:
   jvm:
-    maxHeapSize: "8G"
+    maxHeapSize: "1G" #8G is the default value
     gcMethod:
       type: "UseG1GC"
       g1:

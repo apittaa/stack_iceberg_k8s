@@ -6,6 +6,6 @@ metadata:
   labels:
     argocd.argoproj.io/secret-type: repository
 stringData:
-  url: https://Frndo1203@github.com/Frndo1203/stack_iceberg_starrocks_k8s.git
-  password: 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
-  username: Frndo1203
+  url: https://apittaa@github.com/apittaa/stack_iceberg_k8s.git
+  password: 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
+  username: apitta
