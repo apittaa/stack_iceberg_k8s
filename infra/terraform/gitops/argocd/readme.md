@@ -24,7 +24,7 @@ kubectl -n gitops get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 kubectl port-forward svc/argocd-server -n gitops 8080:443
 kubectl get svc argocd-server -n gitops
 
-argocd login "localhost:8080" --username admin --password "7nPmV7HLRFQ4n4GA" --insecure
+argocd login "localhost:8080" --username admin --password "Myns42-kK6BEKFmf" --insecure
 kubectx
 kubectl config view --context ice-inno --minify --flatten -o json | base64 -w 0
 echo -n "ice-inno" | base64

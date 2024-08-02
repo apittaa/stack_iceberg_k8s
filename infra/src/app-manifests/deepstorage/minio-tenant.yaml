@@ -13,7 +13,7 @@ spec:
       valueFiles:
       - values.yaml
   destination:
-    name: 'ice-inno-dev'
+    name: 'ice-inno'
     namespace: deepstorage
     server: ''
   syncPolicy:
