@@ -16,6 +16,8 @@ helm repo add argo https://argoproj.github.io/argo-helm
 terraform init
 terraform apply
 ```
+### Configure .kube/config port-forward to argocd-server
+https://192.168.49.2:8443
 
 ### configure [manual]
 ```sh
@@ -24,7 +26,7 @@ kubectl -n gitops get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 kubectl port-forward svc/argocd-server -n gitops 8080:443
 kubectl get svc argocd-server -n gitops
 
-argocd login "localhost:8080" --username admin --password "Myns42-kK6BEKFmf" --insecure
+argocd login "localhost:8080" --username admin --password "Taj6eHmDDrSXmrLe" --insecure
 kubectx
 kubectl config view --context ice-inno --minify --flatten -o json | base64 -w 0
 echo -n "ice-inno" | base64
